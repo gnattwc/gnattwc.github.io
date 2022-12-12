@@ -1,12 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url("https://lh3.googleusercontent.com/FV8Mlp1UChCxVgo4hCKQx4gWI4dr2miKbq_8TBv6Vi2aiC_-rZ5eITGkx3sm32H9zLvqob_DOdUOgN7TgixCl8fcLVPxVpiVrpOaStBO1Uf5MsjerNQ_VzwWUF1i-tw-coRb4ofi41Log_NQ91xYcc91FqJtafvhuyxnTgjyYA7MPgxb75XYR2NRt-rUIM8UeRxVjPfLK_WIW82igZb-km14qM23_Y5WmegJ6pgjhAeq9pd0QYDXpUj5ii0L0THstuxQGsugE3E9X_2xhWZVJ6JiqvWzzt34EheIBhavUnIx6lrHrleprSusgB3_Kqj71bPnFM8Q8RxRD8a41GKg66srxDTDnNxypxqvc2S1s0lwaUrkwYM-vyW9fkFUEe8IMnoB4XtiFGwT9yToJdbFmI0D86HSWQi80OJyVVnqOGs0Xq9_Ilh8Vb0dfeB-ycbAzjVvFmh3LgwDwidhw1s8Xe8aZGv4gUPfkBMTgodEeRLblG6w3ZJTIMTcYAA9WkwfuJg4iYu5FCyI6AG8k0icUvMoxJTlZc6m_cCifUPdJbwFhLumpyS0Vhb6rQ2NZRAHPCAan9wzgGv5fw8KPT-cdnMGDOEPGIgkFwzzfdlzudsAJ-pDdL7ErlWRbtTFLDDAukA9j6_7aO4RQNDmLX46ZBpOpfhgoQ2UM28nb2dJm_Ugw-y_mhjXj0StPwB3tHgKRIm3daQJs1DoLx2m83bLzYebh9PP5vW55nf7zzUgv1rbTv4LlAngxayrgfZNw17wLWQFdvASJxDtuiSqY4LvV8VMN7tfO6vrbhoP3439PCKqqcF2Fbzf5IwnlInDaJHxxiY5otr1k26IUVb7hS-dJEeKA79-TUViRWicilgbkenWwYhuQv3MHr20DQa5CClvjUAEFd7S-4XlaHz6t-PyVQpcpMcx6UBWkqH0bL_mxrxVnlSuPA=w1524-h788-no?authuser=0");
     background-repeat: no-repeat;
     background-size: auto;
+    font-family: Verdana;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    color: grey;
+}
+
+.logo {
+    color: blue;
+}
+
+nav {
+    background: lightslategrey;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .item {
+    padding: 10px;
+    position: relative;
+    display: block;
+    width: auto;
+}
+
+nav .item a:hover {
+    color: #ccc;
 }
