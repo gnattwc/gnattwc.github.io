@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Jug Problem Solver</title>
+    <link rel="stylesheet" href="./css/sytle.css">
+    <script defer src="./dist/bundle.js"></script>
+</head>
+<body>
+    <div id="problem">
+        <h3>Water Jug Problem</h3>
+        <p>
+            You have an X-gallon and a Y-gallon jug that you can fill from a lake. (Assume lake has unlimited amount
+            of water.) <br> By using only an X-gallon and Y-gallon jug (no third jug), measure Z gallons of water. 
+        </p>
+    </div>
+    <form id="xyzForm">
+        <fieldset>
+            <legend>Jug sizes (gallons)</legend>
+            <p>
+                <label for="leftJug">X:</label>  
+                <input type="number" name="LeftJug" id="leftJug" value="4">  
+            </p>
+            <p>
+                <label for="rightJug">Y:</label>  
+                <input type="number" name="RightJug" id="rightJug" value="3">    
+            </p>
+            <p>
+                <label for="aim">Z:</label>  
+                <input type="number" name="Aim" id="aim" value="2">
+            </p>            
+            <button type="button" value="Click" id="run">Solve Riddle</button>    
+        </fieldset>
+    </form>
+    <h3 id="inputValuesText"></h3>
+    <div id="glassSection" style="visibility: hidden">
+        <div id="leftGlassCtr" class="glassCtr">
+            <div id="leftGlass" class="glass leftGlass"></div>
+        </div>
+        <div id="actionGlass" class="action"></div>
+        <div id="rightGlassCtr" class="glassCtr">
+            <div id="rightGlass" class="glass rightGlass"></div>
+        </div>
+    </div>
+    <div id="output">
+        <h3 id="solutionText" class="highlight"></h3>
+        <table id="solutionTable" style="visibility: hidden">
+            <tr>
+                <th>Step</th>
+                <th>Action</th>
+                <th>State</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
